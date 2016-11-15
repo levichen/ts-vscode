@@ -6,6 +6,7 @@
       "check-format",
       "allow-leading-underscore",
       "ban-keywords"
-    ]
+    ],
+    "no-console": [false]
   }
 }

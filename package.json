@@ -1,14 +1,15 @@
 {
-  "name": "ts-vscode",
+  "name": "ops.jarvis",
   "version": "0.0.1",
   "engines": {
     "node": "4.3.2",
     "npm": "2.14.12"
   },
-  "description": "Skeleton for TypeScript",
+  "description": "Bot for operation",
   "main": "target/app.js",
   "devDependencies": {
     "@types/chai": "3.4.30",
+    "@types/js-yaml": "^3.5.28",
     "@types/mocha": "2.2.29",
     "@types/node": "6.0.31",
     "chai": "^3.5.0",
@@ -20,7 +21,7 @@
     "typescript": "^2.0.9"
   },
   "scripts": {
-    "clean": "./node_modules/rimraf/bin.js target",
+    "clean": "./node_modules/rimraf/bin.js dist",
     "lint": "./node_modules/tslint/bin/tslint --format verbose src/**/*.ts",
     "build": "npm run clean && npm run lint && echo Using TypeScript && node_modules/typescript/bin/tsc --version && node_modules/typescript/bin/tsc --pretty",
     "test": "npm run build && ./node_modules/mocha/bin/_mocha --compilers ts:ts-node/register --recursive tests/**/*-spec.ts",
@@ -33,5 +34,14 @@
     "TDD"
   ],
   "author": "Levi Chen",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@types/aws-sdk": "0.0.41",
+    "@types/bluebird": "^3.0.35",
+    "@types/lodash": "^4.14.38",
+    "aws-sdk": "^2.7.0",
+    "bluebird": "^3.4.6",
+    "js-yaml": "^3.7.0",
+    "lodash": "^4.16.6"
+  }
 }

@@ -1,8 +1,12 @@
 
-import "source-map-support/register";
+import { GetConfig }  from "./libs/GetConfig";
+import GetConfigFactory from "./libs/GetConfigFactory";
+import IServiceResource from "./libs/IServiceResource";
 
-import Greeter from "./greeter";
+let configFilePath: string = __dirname + "/../config/config.yml";
 
-let p = new Greeter("message");
+let configInstance: GetConfig = new GetConfigFactory(configFilePath).getInstance();
 
-p.greet();
+let config: IServiceResource[] = configInstance.getConfig(); 
+
+console.log(config);
