@@ -1,5 +1,5 @@
 {
-  "name": "ops.jarvis",
+  "name": "ts-vscode",
   "version": "0.0.1",
   "engines": {
     "node": "4.3.2",
@@ -36,10 +36,8 @@
   "author": "Levi Chen",
   "license": "MIT",
   "dependencies": {
-    "@types/aws-sdk": "0.0.41",
     "@types/bluebird": "^3.0.35",
     "@types/lodash": "^4.14.38",
-    "aws-sdk": "^2.7.0",
     "bluebird": "^3.4.6",
     "js-yaml": "^3.7.0",
     "lodash": "^4.16.6"
