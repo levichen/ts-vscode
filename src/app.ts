@@ -1,12 +1,15 @@
 
-import { GetConfig }  from "./libs/GetConfig";
-import GetConfigFactory from "./libs/GetConfigFactory";
-import IServiceResource from "./libs/IServiceResource";
+import * as sourceMapSupport from "source-map-support";
+sourceMapSupport.install();
 
-let configFilePath: string = __dirname + "/../config/config.yml";
+class Foo {
+  constructor() { this.bar(); }
 
-let configInstance: GetConfig = new GetConfigFactory(configFilePath).getInstance();
+  public bar() {
+      throw new Error("this is a demo");
+  }
+}
 
-let config: IServiceResource[] = configInstance.getConfig(); 
+let p = new Foo();
 
-console.log(config);
+p.bar();

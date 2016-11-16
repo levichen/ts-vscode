@@ -1,3 +1,4 @@
+
 export default class Greeter {
   private greeting: string;
 
@@ -6,8 +7,6 @@ export default class Greeter {
   }
 
   public greet() {
-    // throw new Error("test") => test source mapping;
-
-    return "Bonjour, " + this.greeting + "!!";
+    throw new Error("test");
   }
 };

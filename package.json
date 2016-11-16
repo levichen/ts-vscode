@@ -5,8 +5,8 @@
     "node": "4.3.2",
     "npm": "2.14.12"
   },
-  "description": "Bot for operation",
-  "main": "target/app.js",
+  "description": "For TypeScript",
+  "main": "dist/app.js",
   "devDependencies": {
     "@types/chai": "3.4.30",
     "@types/js-yaml": "^3.5.28",
@@ -15,7 +15,6 @@
     "chai": "^3.5.0",
     "mocha": "^3.0.1",
     "rimraf": "^2.5.4",
-    "source-map-support": "^0.4.5",
     "ts-node": "^1.7.0",
     "tslint": "^3.15.1",
     "typescript": "^2.0.9"
@@ -38,8 +37,9 @@
   "dependencies": {
     "@types/bluebird": "^3.0.35",
     "@types/lodash": "^4.14.38",
+    "@types/source-map-support": "^0.2.28",
     "bluebird": "^3.4.6",
-    "js-yaml": "^3.7.0",
-    "lodash": "^4.16.6"
+    "lodash": "^4.16.6",
+    "source-map-support": "^0.4.6"
   }
 }
